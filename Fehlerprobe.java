@@ -9,7 +9,7 @@ public class Fehlerprobe {
         
         if (pruefwert > 3) {
             String hinweis = "Datensatz vollstaendig";
-        }
+       }
         System.out.println(hinweis); // [4]
     }
 }
