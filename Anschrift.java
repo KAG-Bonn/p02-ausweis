@@ -4,9 +4,10 @@ public class Anschrift {
     private int plz;
     private String wohnort;
 
-    public String gibAnschrift(){
+    public String gibStrasse(){
         return strasse;
-        return hausnummer;
-        return 
     }
 }
+
+    public String gibhausnummer() 
+    
