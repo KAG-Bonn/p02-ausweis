@@ -8,4 +8,5 @@ public class Datum {
         private int monat = pMonat
         private int jahr = pJahr
     }
+    public void setzteTag(int pTag, int pMonat, int pJahr)
 }
