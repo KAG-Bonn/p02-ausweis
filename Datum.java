@@ -4,9 +4,18 @@ public class Datum {
     private int jahr;
 
     public Datum (int pTag, int pMonat, int pJahr) {
-        private int tag = pTag
-        private int monat = pMonat
-        private int jahr = pJahr
+        private int tag = pTag;
+        private int monat = pMonat;
+        private int jahr = pJahr;
     }
-    public void setzteTag(int pTag, int pMonat, int pJahr)
+    public int gibTag(){
+        return tag;
+    }
+
+    public void setzteTag(int pTag, int pMonat, int pJahr) {
+        private int tag = pTag;
+        private int monat = pMonat;
+        private int jahr = pJahr;
+    }
+
 }
