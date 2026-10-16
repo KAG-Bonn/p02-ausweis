@@ -20,7 +20,25 @@ public class Datum {
     }
 
     public void setzteTag() {
-        tag = pTag
+        tag = pTag;
+        return;
+    }
+
+    public int gibmonat() {
+        return monat;
+    }
+
+    public void setztemonat() {
+        monat = pmonat;
+        return;
+    }
+
+    public int gibjahr() {
+        return jahr;
+    }
+
+    public void setztejahr() {
+        jahr = pjahr;
         return;
     }
 

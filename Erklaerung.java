@@ -12,4 +12,49 @@ public class Erklaerung{
     spendetLunge = pspendetLunge;
     spendetHornhaut = pspendetHornhaut;
     }
+
+    public boolean gibspendetNiere() {
+        return spendetNiere;
+    }
+
+    public void setztespendetNiere() {
+        spendetNiere = pspendetNiere;
+        return;
+    }
+
+    public boolean gibspendetLeber() {
+        return spendetLeber;
+    }
+
+    public void setztespendetLeber() {
+        spendetLeber = pspendetLeber;
+        return;
+    }
+
+    public boolean gibspendetHerz() {
+        return spendetHerz;
+    }
+
+    public void setztespendetHerz() {
+        spendetHerz = pspendetHerz;
+        return;
+    }
+
+    public boolean gibspendetLunge() {
+        return spendetLunge;
+    }
+
+    public void setztespendetLunge() {
+        spendetLunge = pspendetLunge;
+        return;
+    }
+
+    public boolean gibspendetHornhaut() {
+        return spendetHornhaut;
+    }
+
+    public void setztespendetHornhaut() {
+        spendetHornhaut = pspendetHornhaut;
+        return;
+    }
 }
