@@ -3,7 +3,7 @@ public class Anschrift {
     private String hausnummer;
     private int plz;
     private String wohnort;
-}
+
 public Anschrift(String pStrasse, String pHausnummer, int pPlz, String pWohnort) {
     strasse = pStrasse;
     hausnummer = pHausnummer;
@@ -11,9 +11,11 @@ public Anschrift(String pStrasse, String pHausnummer, int pPlz, String pWohnort)
     wohnort = pWohnort;
 }
 public String gibStrasse() {
-    return tag;
+    return strasse;
 }
 public void setzeStrasse (String pStrasse) {
     strasse = pStrasse;
     return;
+}
+
 }
