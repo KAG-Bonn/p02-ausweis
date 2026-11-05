@@ -3,7 +3,11 @@ public class Datum {
     private int monat;
     private int jahr;
 
-    privat Datum(int pTag, int pMonat, int pJahr){
+    public Datum(int pTag, int pMonat, int pJahr) {
+		//TODO Auto-generated constructor stub
+	}
+
+	privat Datum(int pTag, int pMonat, int pJahr){
 
     }
 
