@@ -4,18 +4,25 @@ public class Person {
     private Anschrift anschrift;
     private Datum geburtsdatum;
 
-        public Datum (String pvorname, String pnachname, Anschrift panschrift, Datum pgeburtsdatum) {
+    public Person (String pvorname, String pnachname, Anschrift panschrift, Datum pgeburtsdatum) {
         vorname = pvorname;
         nachname = pnachname;
         anschrift = panschrift;
         geburtsdatum = pgeburtsdatum;
     }
 
+    public Person (String pvorname, String pnachname, String pAnschrift, int pTag, int pMonat, int pJahr) {
+        vorname = pvorname;
+        nachname = pnachname;
+        anschrift = pAnschrift;
+        geburtsdatum = new Datum(pTag, pMonat, pJahr)
+    }
+
     public String gibvorname() {
         return vorname;
     }
 
-    public void setztevorname() {
+    public void setzevorname() {
         vorname = pvorname;
         return;
     }
@@ -24,7 +31,7 @@ public class Person {
         return nachname;
     }
 
-    public void setztenachname() {
+    public void setzenachname() {
         nachname = pnachname;
         return;
     }
@@ -33,7 +40,7 @@ public class Person {
         return anschrift;
     }
 
-    public void setzteanschrift() {
+    public void setzeanschrift() {
         anschrift = panschrift;
         return;
     }
@@ -42,8 +49,9 @@ public class Person {
         return geburtsdatum;
     }
 
-    public void setztegeburtsdatum() {
+    public void setzegeburtsdatum() {
         geburtsdatum = pgeburtsdatum;
         return;
     }
+
 }
