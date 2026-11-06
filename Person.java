@@ -15,7 +15,14 @@ public class Person {
         vorname = pvorname;
         nachname = pnachname;
         anschrift = pAnschrift;
-        geburtsdatum = new Datum(pTag, pMonat, pJahr)
+        geburtsdatum = new Datum(pTag, pMonat, pJahr);
+    }
+
+    public Person (String pvorname, String pnachname) {
+        vorname = pvorname;
+        nachname = pnachname;
+        anschrift = new Anschrift();
+        geburtsdatum = new Geburtsdatum();
     }
 
     public String gibvorname() {
@@ -53,5 +60,16 @@ public class Person {
         geburtsdatum = pgeburtsdatum;
         return;
     }
+
+    public Anschrift gibAnschrift() {
+        return anschrift;
+    }
+
+    public Datum gibGeburtsdatum() {
+        return geburtsdatum;
+    }
+
+    Person mika = new Person("Mika", "Keller");
+    System.out.printIn(mika.gibAnschrift().strasse);
 
 }

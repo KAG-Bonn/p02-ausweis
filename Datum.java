@@ -9,7 +9,7 @@ public class Datum {
         jahr = 2026;
     }
 
-        public Datum (int pTag, int pMonat; int pjahr) {
+    public Datum (int pTag, int pMonat; int pjahr) {
         tag = pTag;
         monat = pMonat;
         jahr = pjahr;
