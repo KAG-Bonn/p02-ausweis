@@ -38,7 +38,7 @@ public class Anschrift{
         return;
     }
 
-    public String C() {
+    public String gibwohnort() {
         return wohnort;
     }
 
@@ -46,4 +46,18 @@ public class Anschrift{
         wohnort = pwohnort;
         return;
     }
+    
+
+    public String formatiert() {
+        String ergebnis;
+        ergebnis = strasse + " " + hausnummer + "\n" + plz + " " + wohnort;
+        return ergebnis;
+    }
+
+    public String formatiert(String pTrenner) {
+        String ergebnis;
+        ergebnis = strasse + " " + hausnummer + pTrenner + plz + " " + wohnort;
+        return ergebnis;
+    }
+
 }

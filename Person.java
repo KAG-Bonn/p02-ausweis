@@ -72,4 +72,8 @@ public class Person {
     Person mika = new Person("Mika", "Keller");
     System.out.printIn(mika.gibAnschrift().strasse);
 
+    public boolean prüfeAlter(int pAlter, Datum aktDatum) {
+        aktDatum.gibjahr() - geburtsdatum.gibjahr() 
+        //zwei datumsobjekte wie gucken wie alt es ist
+    }
 }
