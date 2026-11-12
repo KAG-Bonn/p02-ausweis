@@ -51,15 +51,15 @@ public class Anschrift {
         return wohnort;
     }
 
-    public String formatierst() {
+    public String formatiert() {
         String ergebnis;
         ergebnis = strasse + " " + hausnummer + "\n" + plz + " " + wohnort;
         return ergebnis;
     }
 
-    public String formatierst2() {
+    public String formatiert2(String pTrenner) {
         String ergebnis;
-        ergebnis = strasse + " " + hausnummer + plz + "" + wohnort;
+        ergebnis = strasse + " " + hausnummer + pTrenner + plz + "" + wohnort;
         return ergebnis;
     }
     
