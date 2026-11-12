@@ -7,7 +7,7 @@ public class Datum{
     public Datum(int pTag, int pMonat, int pJahr) {
         tag = pTag;
         monat = pMonat;
-        jahr = pJahr;
+        Jahr = pJahr;
     }
 
     //gibTag soll ein nummer haben deswegen davor int schreiben  //bei einer Anfrage steht schon der Wertart wie z.B. int
@@ -17,4 +17,10 @@ public class Datum{
 
     public void setzeTag(int pTag) { //Bei was eingeben schreibt man void
         tag = pTag;
+    }
+
+    public String formuliert() {
+        String ergebnis;
+        ergebnis = tag + "." + monat + "." + jahr;
+        return ergebnis;
     }

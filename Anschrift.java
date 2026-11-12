@@ -3,12 +3,14 @@ public class Anschrift{
     private String hausnummer;
     private String wohnort;
     private int plz;
+    private String trenner;
 
 
-    public Anschrift(int pPlz, String pHausnummer, String pWohnort) {
+    public Anschrift(int pPlz, String pHausnummer, String pWohnort, pTrenner) {
         strasse = pStrasse;
         hausnummer = pHausnummer;
         wohnort = pWohnort;
+        trenner = pTrenner;
     }
 
     //gibTag soll ein nummer haben deswegen davor int schreiben  //bei einer Anfrage steht schon der Wertart wie z.B. int
@@ -16,7 +18,13 @@ public class Anschrift{
         return strasse; //tag ist Artibut //return gibt tag zurück
     }
 
-    public void setzeTag(int pTag) { //Bei was eingeben schreibt man void
-        tag = pTag;
+    public void setzeStrasse(String pStrasse) { //Bei was eingeben schreibt man void
+        strasse = pStrasse;
     }
+
+    public String formatiert(){
+        String ergebnis;
+        ergebnis = strasse + " " + hausnummer + trenner + plz + " " + wohnort;  
+        return ergebnis;
+    }    
 }
