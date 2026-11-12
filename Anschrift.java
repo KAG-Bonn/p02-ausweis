@@ -22,9 +22,13 @@ public class Anschrift{
         strasse = pStrasse;
     }
 
+    public void setzeTrenner(String pTrenner){
+        trenner = "\n"
+    }
+    
     public String formatiert(){
         String ergebnis;
-        ergebnis = strasse + " " + hausnummer + trenner + plz + " " + wohnort;  
+        ergebnis = strasse + " " + hausnummer + pTrenner + plz + " " + wohnort;  
         return ergebnis;
     }    
 }

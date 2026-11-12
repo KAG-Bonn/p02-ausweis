@@ -24,3 +24,7 @@ public class Datum{
         ergebnis = tag + "." + monat + "." + jahr;
         return ergebnis;
     }
+
+    public Datum prüfeAlter(int pAlter, Datum aktDatum) {
+        
+    }
