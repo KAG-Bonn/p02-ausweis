@@ -71,9 +71,28 @@ public class Person {
 
     Person mika = new Person("Mika", "Keller");
     System.out.printIn(mika.gibAnschrift().strasse);
-
-    public boolean prüfeAlter(int pAlter, Datum aktDatum) {
-        aktDatum.gibjahr() - geburtsdatum.gibjahr() 
-        //zwei datumsobjekte wie gucken wie alt es ist
+    
+    
+    public int gibAlter(Datum paktDatum){
+        if(paktDatum.gibMonat() < geburtsdatum.gibMonat()) {
+            return paktDatum.gibjahr() - geburtsdatum.gibjahr() - 1;
+        }
+        else if (paktDatum.gibMonat() == geburtsdatum.gibMonat()) {
+            if (aktDatum.gibTag() < geburtsdatum.gibTag()) {
+                return paktDatum.gibjahr() - geburtsdatum.gibjahr() - 1;
+            }
+        }
+        else {
+            return paktDatum.gibjahr() - geburtsdatum.gibjahr();
+        }
     }
+
+    public boolean istvolljaehrig(int gibAlter()){
+        return gibAlter >= 18;
+    }   
 }
+
+    //public boolean prüfeAlter(int pAlter, Datum aktDatum) {
+    //aktDatum.gibjahr() - geburtsdatum.gibjahr()}
+    //zwei datumsobjekte wie gucken, wie alt es ist monat vergleichen wenn gleich tag vergleichen
+    //Verzweigung: if, else if (manchmal wenn man es braucht), else + bedingungen wann es erfüllt ist
