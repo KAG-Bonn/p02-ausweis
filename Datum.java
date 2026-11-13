@@ -4,7 +4,7 @@ public class Datum {
     private int jahr;
 
     public Datum(int pTag, int pMonat, int pJahr) {
-		//TODO Auto-generated constructor stub
+		
 	}
 
 
@@ -21,6 +21,6 @@ public class Datum {
     }
 
     public void setzTag () {
-        setzTag()
+        setzTag();
     }
 }

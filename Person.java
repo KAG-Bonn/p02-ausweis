@@ -51,11 +51,23 @@ public Datum gibGeburtsdatum () {
     return geburtsdatum;
 }
 
-public boolean prüfeAlter (int pAlter) {
- public int gibAlter 
-   
-
-}
-
+public int gibAlter(Datum pAktDatum) {
+    int alter = pAktDatum.gibJahr() - geburtsdatum.gibJahr();
+    if(pAktDatum.gibMonat() < geburtsdatum.gibMonat()) {
+    return alter - 1;
+    } 
+    else if(pAktDatum.gibMonat() == geburtsdatum.gibMonat()) {
+    if(pAktDatum.gibTag() < geburtsdatum.gibTag()) 
+    {
+    return alter - 1;
+    }
+    else {
+    return alter;
+    }
+    } 
+    else {
+    return pAktDatum.gibJahr() - geburtsdatum.gibJahr();
+    }
+    }
 
 }
