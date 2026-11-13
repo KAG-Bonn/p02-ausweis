@@ -12,5 +12,8 @@ public class Person{
 
     public int gibAlter(Datum aktDatum) {
         
-    }
+        if(aktDatum.gib Monat () < ...monatGeburtsdatum ) { 
+            returnpAktDatum.gibJahr()jahrGeburtsdatum-...; 
+        }
+    } elseif(.
 }
