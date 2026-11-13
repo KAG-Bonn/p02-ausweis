@@ -70,3 +70,18 @@ public String gibWohnort("Köln") {
 }
 }
 
+public boolean gibAlter(Datum pAktDatum) {
+    int alter = pAktDatum
+if(aktDatum.gibMonat()<geburtsDatum.gibMonat){
+    return pAktDatum.gibJahr()-pGeburtsDatum.gibJahr()-1;
+}
+else if(aktDatum.gibMonat()==geburtsDatum.gibMonat){
+   if(aktDatum.gibTag()<geburtsDatum.gibTag){
+    return pAktDatum.gibJahr()-pGeburtsDatum.gibJahr()-1;
+}
+}
+else{
+    return pAktDatum.gibJahr()-pGeburtsDatum.gibJahr();
+}
+
+}
