@@ -51,11 +51,11 @@ public Datum gibGeburtsdatum () {
     return geburtsdatum;
 }
 
-public boolean prüfeAlter (int pAlter, Datum aktDatum) {
-    aktDatum.gibJahr() - geburtsdatum.gibJahr() ;
+public boolean prüfeAlter (int pAlter) {
+ public int gibAlter 
+   
 
 }
 
+
 }
-
-

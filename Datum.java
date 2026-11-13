@@ -7,9 +7,6 @@ public class Datum {
 		//TODO Auto-generated constructor stub
 	}
 
-	privat Datum(int pTag, int pMonat, int pJahr){
-
-    }
 
     public int gibTag () {
         return tag;
