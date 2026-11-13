@@ -2,7 +2,6 @@ public class Person {
     private String vorname;
     private String nachname;
     private Datum geburtsdatum;
-
 }
 public Person (String pVorname, String pNachname, Datum pDatum)
 vorname = pVorname
