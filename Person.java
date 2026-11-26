@@ -35,7 +35,7 @@ public void setzeGeburtsdatum (Datum pGeburtsdatum) {
     geburtsdatum = pGeburtsdatum;
 }
 
-public String gibVorname () ­{
+public String gibVorname () {
     return vorname;
 }
 
